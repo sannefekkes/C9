@@ -27,6 +27,8 @@
             <input type="range" name="minuten" id="minuten" value="0" min="0" max="59" data-highlight="true">
             <label for="seconden">Aantal seconden:</label>
             <input type="range" name="seconden" id="seconden" value="0" min="0" max="59" data-highlight="true">
+            
+            <!-- gekopieerd van de webapp van informatica-actief -->
             <label class="ui-hidden-accessible" for="bereken">Bereken:</label>
 			<button class="ui-shadow ui-btn ui-corner-all ui-mini" id="bereken" type="submit" name="bereken">BEREKEN</button>
         
