@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Mobile page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/themes/watermeloen.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.structure-1.4.5.min.css" /> 
+  <script src="src/jquery-1.11.1.min.js"></script> 
+  <script src="src/jquery.mobile-1.4.5.min.js"></script> 
+</head>
+<body>
+    
+    <div id="pag1" data-role="page">
+         <div data-role="header">
+            <h1>BMW versie 1</h1>
+         </div>
+      
+    <div data-role="main" class="ui-content">
+        
+        <form method="post" action="demoform.asp">
+            <div class="ui-field-contain">
+            <label for="aanbieder">Aanbieder: </label>
+            <input type="text" name="aanbieder" id="aanbieder">
+            </div>
+    
+        <fieldset class="ui-field-contain">
+            <label for="model">Selecteer model</label>
+            <select name="model" id="model" data-native-menu="false">
+                <option value="1">BMW Model 1</option>
+                <option value="2">BMW Model 2</option>
+                <option value="3">BMW Model 3</option>
+                <option value="4">BMW Model 4</option>
+                <option value="5">BMW Model 5</option>
+            </select>
+        </fieldset>
+
+<!-- ik heb de carrosserie eruit gelaten, aangezien ik geen idee heb wat het is, en radiobuttons worden nog vaker gebruikt -->
+
+        <fieldset data-role="controlgroup">
+            <legend>Type brandstof:</legend>
+            <label for="benzine">Benzine</label>
+            <input type="radio" name="brandstof" id="benzine" value="benzine">
+            <label for="diesel">Diesel</label>
+            <input type="radio" name="brandstof" id="diesel" value="diesel">
+            <label for="elektrisch">Elektrisch</label>
+            <input type="radio" name="brandstof" id="elektrisch" value="elektrisch">
+        </fieldset>
+    
+        <fieldset class="ui-field-contain">
+            <label for="bouwjaar">Selecteer bouwjaar</label>
+            <select name="bouwjaar" id="bouwjaar" data-native-menu="false">
+                <option value="1990">1990</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1996">1996</option>
+                <option value="2000">2000</option>
+            </select>
+        </fieldset>
+    
+        <fieldset data-role="controlgroup">
+            <legend>Kleur auto:</legend>
+            <label for="zwart">Zwart</label>
+            <input type="radio" name="kleur" id="zwart" value="zwart">
+            <label for="rood">Rood</label>
+            <input type="radio" name="kleur" id="rood" value="rood">
+            <label for="blauw">Blauw</label>
+            <input type="radio" name="kleur" id="blauw" value="blauw">
+            <label for="grijs">Grijs</label>
+            <input type="radio" name="kleur" id="grijs" value="grijs">
+        </fieldset>
+    
+        <label for="kilometers">Aantal kilometers op de teller:</label>
+          <input type="range" name="kilometers" id="kilometers" value="0" min="0" max="50000" data-highlight="true">
+    
+         <fieldset class="ui-field-contain">
+            <label for="extra">Selecteer extra's:</label>
+            <select name="extra" id="extra" multiple data-native-menu="false">
+                <option value="LM">LM-velgen</option>
+                <option value="lak">Metallic lak</option>
+                <option value="navigatie">Ingebouwde navigatie</option>
+            </select>
+        </fieldset>
+        
+        <div class="ui-field-contain">
+            <label for="prijs">Vraagprijs: </label>
+            <input type="number" name="prijs" id="prijs">
+        </div>
+    
+        </form>
+    </div>
+    </div>
+</body>
+</html>
