@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Mobile page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/themes/watermeloen.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.structure-1.4.5.min.css" /> 
+  <script src="src/jquery-1.11.1.min.js"></script> 
+  <script src="src/jquery.mobile-1.4.5.min.js"></script> 
+</head>
+<body>
+    
+    <div id="pag1" data-role="page">
+         <div data-role="header">
+            <h1>Tabel Graansoorten</h1>
+         </div>
+      
+    <div data-role="main" class="ui-content">
+        
+    <table data-role="table" data-mode="columntoggle" class="ui-responsive" id="myTable">
+      <thead>
+        <tr>
+          <th> </th>
+          <th data-priority="1">Volkoren tarwemeel (2,4)</th>
+          <th data-priority="3">Speltmeel (4)</th>
+          <th data-priority="2">Havermeel (4)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Energie (kcal)</td>
+          <td>332</td>
+          <td>361</td>
+          <td>390</td>
+        </tr>
+        <tr>
+          <td>Eiwitten (g)</td>
+          <td>10,0</td>
+          <td>13,3</td>
+          <td>14,9</td>
+        </tr>
+        <tr>
+          <td>Koolhydraten (g)</td>
+          <td>62,0</td>
+          <td>69,6</td>
+          <td>62,0</td>
+        </tr>
+        <tr>
+          <td>Waarvan suikers (g)</td>
+          <td>0,5</td>
+          <td>0,5</td>
+          <td>4,5</td>
+        </tr>
+        <tr>
+          <td>Vet (g)</td>
+          <td>2,0</td>
+          <td>2,8</td>
+          <td>7,2</td>
+        </tr>
+        <tr>
+          <td>Waarvan verzadigd (g)</td>
+          <td>0,0</td>
+          <td>?</td>
+          <td>1,0</td>
+        </tr>
+        <tr>
+          <td>Vezels (g)</td>
+          <td>11,0</td>
+          <td>2,5</td>
+          <td>7,5</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
